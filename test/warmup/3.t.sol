@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity >=0.8.13 <0.9.0;
 import "forge-std/Test.sol";
-import "../src/3.sol";
+import "../../src/warmup/3.sol";
 import "forge-std/console.sol";
 contract CaptureTheEtherTest is Test {
     CaptureTheEther captureTheEther;

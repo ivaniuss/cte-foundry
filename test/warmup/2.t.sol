@@ -2,7 +2,7 @@
 pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
-import "../src/2.sol";
+import "../../src/warmup/2.sol";
 
 contract CallMeChallengeTest is Test {
     CallMeChallenge callMeChallenge;

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity >=0.8.13 <0.9.0;
 import "forge-std/Test.sol";
-import "../src/4.sol";
+import "../../src/lotteries/1.sol";
 contract GuessTheNumberChallengeTest is Test {
     GuessTheNumberChallenge guessTheNumberChallenge;
     address player;
